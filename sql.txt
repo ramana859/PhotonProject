@@ -1,0 +1,29 @@
+show databases;
+use mysql;
+show tables;
+
+create table product
+(id int not null,
+name varchar(255),
+description varchar(255),
+price float,
+image_url varchar (100)
+);
+drop table product;
+select * from product;
+insert into product 
+values(3, 'pasta', 'yummy', 25.50, 'http://dummyimage.com/246×100.pn/ffffff'
+);
+
+create table orders
+(id int,
+customer_name varchar(255),
+products int,
+order_date DATE
+);
+
+select * from orders;
+drop table orders;
+insert into orders 
+values(1, 'ramana', 1, date '2024-04-09');
+
